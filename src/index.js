@@ -40,14 +40,21 @@ import App from './App';
 import { LoadingScreen } from './loader/LoadingScreen';
 import { LoadingProvider } from './loader/LoadingContext'; // Update the import here
 import reportWebVitals from './reportWebVitals';
+import { SnackbarProvider } from './snack-bar/SnackBarContext';
+import { Snackbar } from './snack-bar/SnackBar';
 
 const RootComponent = () => {
   return (
     <LoadingProvider>
-      <React.StrictMode>
-        <App />
-      </React.StrictMode>
-      <LoadingScreen />
+      <SnackbarProvider>
+        <React.StrictMode>
+          <App />
+        </React.StrictMode>
+        <LoadingScreen />
+        <Snackbar /> 
+
+      </SnackbarProvider>
+
     </LoadingProvider>
   );
 };

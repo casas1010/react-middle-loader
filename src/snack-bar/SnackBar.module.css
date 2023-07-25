@@ -1,0 +1,20 @@
+.snackbar {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 24px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .green {
+    background-color: green;
+  }
+  
+  .red {
+    background-color: red;
+  }
+  
